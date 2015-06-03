@@ -35,10 +35,7 @@ public class ArrayList<E>
     public void add(E object)
     {
         // put your code here
-        if(!isFull()) {
-           
-        }
-        else {
+        if(isFull()) {
             int newCapacity = (int) Math.round(dataSet.length * 1.5);
             Object[] newDataSet = new Object[newCapacity]; 
             for(int i = 0; i < dataSet.length; i++) {
