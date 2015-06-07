@@ -25,6 +25,11 @@ public class Node<E>
         return (E) this.data;
     }
     
+    public void setData(E object)
+    {
+        this.data = object;
+    }
+    
     public Node<E> getNext()
     {
         return this.next;
