@@ -34,7 +34,7 @@ public class HashMap<E>
         else {
             HNode<E> currentNode = (HNode<E>) dataSet[index];
             while(currentNode.getNext() != null) {
-                currentNode = currentNode.getNext();
+                currentNode = (HNode<E>) currentNode.getNext();
             }
             currentNode.setNext(newNode);
         }
@@ -49,7 +49,7 @@ public class HashMap<E>
                     return currentNode.getData();
             }
             while(currentNode.getNext() != null) {
-                currentNode = currentNode.getNext();
+                currentNode = (HNode<E>) currentNode.getNext();
                 if(currentNode.getKey().equals(key)) {
                     return currentNode.getData();
                 }

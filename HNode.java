@@ -5,11 +5,9 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class HNode<E>
+public class HNode<E> extends Node<E>
 {
     // instance variables - replace the example below with your own
-    private HNode next;
-    private Object data;
     private String key;
     /**
      * Constructor for objects of class Node
@@ -17,14 +15,8 @@ public class HNode<E>
     public HNode(HNode next, String key, Object data)
     {
         // initialise instance variables
-        this.next = next;
+        super(next, data);
         this.key = key;
-        this.data = data;
-    }
-
-    public E getData()
-    {
-        return (E) this.data;
     }
     
     public String getKey()
@@ -32,13 +24,4 @@ public class HNode<E>
         return this.key;
     }
     
-    public HNode<E> getNext()
-    {
-        return this.next;
-    }
-    
-    public void setNext(HNode node)
-    {
-        this.next = node;
-    }
 }
