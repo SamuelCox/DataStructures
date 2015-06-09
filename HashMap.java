@@ -33,6 +33,7 @@ public class HashMap<E>
         return stringToHash.hashCode() % dataSet.length;
     }
     
+    @SuppressWarnings("unchecked")
     /**
      * A method that adds the object to be stored to the HashMap, and maps the key given to that object.
      * If the array at position of the index computed with hash() is free,

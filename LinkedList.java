@@ -10,8 +10,7 @@
  */
 public class LinkedList<E>
 {
-    //The head of the list. In this implementation the head does not contain any data, so the REAL head
-    // is the Node after the head. A null next field in Nodes is used to represent the end of the list.
+    //The head of the list. A null next field in Nodes is used to represent the end of the list.
     private Node head;
     //The length of the list.
     private int length;
